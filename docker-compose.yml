@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+
+  db:
+    image: postgres
+    restart: always
+    shm_size: 128mb
+    environment:
+      POSTGRES_DB: backend_sql
+      POSTGRES_PASSWORD: 100804
+    ports:
+      - 5433:5432
